@@ -1,4 +1,4 @@
-# Microeconometric-Regression-Analysis
+microeconometric-regression-analysis
 
 This repository contains the replication materials for the bachelor thesis “Ethnic Diversity and Prosocial Behavior in Early Childhood: Evidence from a Field Study in German Kindergartens” (University of Konstanz, 2025).
 The project investigates whether the ethnic and migrant composition of German kindergartens is associated with greater prosocial behavior, measured through a coin allocation experiment among native German children. Using data from the KIDS’n’GROUPS field study, the analysis examines the relationship between diversity (heritage/linguistic and visible) and generosity, with fixed effects and robustness checks.
