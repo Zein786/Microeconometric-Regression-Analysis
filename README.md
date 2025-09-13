@@ -1,16 +1,41 @@
-microeconometric-regression-analysis
+Ethnic Diversity and Prosocial Behavior in Early Childhood
+Project Summary
+This project investigates the relationship between ethnic diversity in German kindergartens and the prosocial behavior of children. Using a field study, the research aims to understand how ethnic heterogeneity within a group of peers influences a child's willingness to engage in cooperative, helpful behavior, specifically measured by a giving game.
 
-This repository contains the replication materials for the bachelor thesis “Ethnic Diversity and Prosocial Behavior in Early Childhood: Evidence from a Field Study in German Kindergartens” (University of Konstanz, 2025).
-The project investigates whether the ethnic and migrant composition of German kindergartens is associated with greater prosocial behavior, measured through a coin allocation experiment among native German children. Using data from the KIDS’n’GROUPS field study, the analysis examines the relationship between heritage diversity (language-based) and visible diversity (skin/hair color) and children’s generosity, with fixed effects and multiple robustness checks.
-Key Features
-R Analysis Script (analysis.R)
-Cleans and prepares raw data from the KIDS’n’GROUPS dataset.
-Constructs measures of heritage diversity and visible diversity at the group level.
-Runs descriptive statistics, correlation analysis, and fixed-effects regressions.
-Performs robustness checks at both the group level and the kindergarten level.
-What Makes This Code Extra Interesting
-Multi-Level Design: Goes beyond individual-level regressions by incorporating peer-group (kigaid × id_group) diversity and testing at the kindergarten average level for robustness.
-Dual Operationalization of Diversity: Distinguishes between heritage-based (linguistic/cultural) and visible (skin/hair) diversity, allowing for nuanced analysis of social mechanisms.
-Fixed-Effects Strategy: Uses kindergarten fixed effects (felm) to control for unobserved institutional differences such as teaching style, local norms, or socio-economic context.
-Behavioral Measure of Generosity: Prosocial behavior is measured via a coin allocation experiment, operationalized both continuously (coins given) and categorically (generosity dummies).
-Robustness and Transparency: Includes multiple cross-checks (correlation matrices, aggregated regressions, fixed-effects models) to strengthen the credibility of results.
+The study is based on a bachelor's thesis by Mohammed El-Zein and uses data collected from a sample of German kindergartens. The analysis employs fixed-effects models to account for unobserved differences between kindergartens and to isolate the effect of ethnic diversity on prosocial behavior. The findings contribute to the ongoing discussion about the social benefits and challenges of diverse early childhood environments.
+
+Files
+Ethnic Diversity and Prosocial Behavior in Early Childhood.pdf: This PDF contains the complete bachelor's thesis. It includes the introduction, literature review, theoretical framework, data and methodology, results, and conclusion of the study. This document provides the full academic context for the project.
+
+Ethnic Diversity and Prosocial Behaviour El-Zein .R: This R script contains the code used to analyze the data and generate the results presented in the thesis. The script is structured into several sections for clarity and reproducibility:
+
+1. Load Required Libraries: Installs and loads the necessary R packages (haven, dplyr, lfe, Matrix).
+
+2. Load Data: Reads the raw data from a .dta file.
+
+3. Clean and Prepare Data: Performs data cleaning, variable creation, and preparation for analysis.
+
+4. Descriptive Statistics: Calculates and presents summary statistics of the key variables.
+
+5. Main Regressions: Runs the primary fixed-effects regressions to estimate the effect of diversity on prosocial behavior.
+
+6. Robustness Checks: Contains additional regressions to test the stability of the main findings using different model specifications.
+
+7. Results and Outputs: Presents the regression summaries and prepares the output for the thesis document.
+
+How to Use the R Script
+To run the analysis, you will need to:
+
+Ensure you have R installed on your system.
+
+Open the .R file in an R environment (e.g., RStudio).
+
+Install the required packages by running the first section of the script.
+
+Update the setwd() path to the location of your data file.
+
+Run the script line by line or in sections to replicate the analysis.
+
+Important Note on Data
+
+Due to confidentiality and data privacy reasons, the original dataset used in this analysis cannot be made public. This repository is intended solely to showcase the methodology and analysis performed in R, as described in the accompanying thesis.
